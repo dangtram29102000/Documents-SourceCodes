@@ -1,0 +1,26 @@
+module counter_dual (front,back,Empty,Full,IO,D,E,RW,RW1,Load,Clk);
+	output [4:0] front,back;
+	output Empty,Full;
+	inout [7:0]IO;
+	input D,E,RW,RW1,Load,Clk;
+	wire [4:0] Q1,Q2,mux_out;
+	wire c1,c2;
+	wire a1,a2,a3,RWn,xor_not,xor1;
+	wire Equal;
+	not not1(RWn,RW);
+	and and1(a1,RWn,E);
+	and and2(a2,RW,E);	
+	and and3(a3,RW1,E);	
+	not n3(xor_not, xor1);
+	xor xor3(xor1, c1, c2);
+	and and5(Empty, Equal, xor_not);
+	and and4(Full, Equal, xor1);
+	assign front[4:0] = Q1 [4:0];
+	assign back[4:0] = Q2[4:0];
+	counterh cnt1 (Q1[4:0],c1,D,a1,Load,Clk);
+	counterh cnt2 (Q2[4:0],c2,D,a2,Load,Clk);
+	compare_5bit com(Equal, 1'b1, Q1[4:0], Q2[4:0]);
+	mux21_5bit mx(mux_out[4:0], Q2[4:0], Q1[4:0], a1);
+  Ram32w_8bit ram32(IO[7:0], mux_out[4:0], 1'b1, a3, E);
+  //module Ram32w_8bit(IO, W_S, W_EN, RWS, CS);
+endmodule

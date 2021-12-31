@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header.gym {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/background-gym.jpg");
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+h1.title {
+    text-align: center;
+    color: aliceblue;
+    padding-top: 200px;
+    font-family: 'Cormorant';
+}
+
+h1.content {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 50px 20px 50px;
+}
+
+p.content {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    padding: 0 60px;
+}
+
+h2.content {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 50px 20px 50px;
+    text-align: center;
+}

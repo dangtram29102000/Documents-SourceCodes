@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    /* margin: 100px auto; */
+    font-size: 15px;
+    font-family: 'Poppins',  'Roboto', sans-serif;
+}
+/* =====ABOUT US===== */
+#cnt{
+   
+}
+.text-center{
+    width: 1200px;
+    margin: 0px auto;
+    text-align: justify;
+}
+#bg-aboutus {
+    /* opacity: 0.8; */
+    background-image: url(image/breadcrumb.jpg);
+   /* Add the blur effect */
+   /* filter: blur(1px);
+   -webkit-filter: blur(1px); */
+    background-size: cover;
+    width: 100%; 
+    height:175px
+}
+#bg-aboutus #inner ul  {
+    list-style: none;
+    display:-webkit-box;
+}
+#bg-aboutus #inner ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+.info{
+    display:inline-flex ;
+   margin: 0 auto;
+    /* margin: 50px 375px 50px 375px; */
+
+}
+.service{
+    margin: 0 auto;
+    text-align: center;
+    display: inline;
+    
+    /* margin: 50px 300px 50px 375px; */
+}
+.service-info{
+    margin: 0 auto;
+    text-align: center;
+    /* display: flex; */
+    margin-bottom: 20px;
+}
+.service-info a img{
+    padding-right: 20px;
+    width: 270px;
+    height: 171px;
+}
+/*==== AWARDS ===*/
+.awards{
+    text-align: center;
+    margin: 0 auto;
+    /* margin: 50px 300px 50px 375px; */
+}
+.awards-info{
+    display: inline-flex;
+}
+.img-awards img {
+width: 200px;
+height: 200px;
+}
+.img-awards{
+    margin: 20px;
+    /* margin-right: 200px      ; */
+    width: 340px;
+    height: 260px;
+    padding-right: 20px;
+    background-color: white;
+    border: 1px solid rgb(199, 199, 199);
+}
+.awards-info .img-awards p{
+    text-align: center;
+    font-style: italic;
+}
+.text, h1,h2{
+    letter-spacing: .5px;
+    line-height: 1.5;
+}
+h1{
+    color:  rgb(126, 126, 126);
+    font-family: fantasy;
+
+}
+h2{
+    font-size: 70px;
+    font-family: fantasy;
+    color: rgb(175, 175, 175);
+    letter-spacing: 3px;
+
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="book-online.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="fontawesome-free-5.15.1/css/all.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <title>Book Online</title>
+    <script type="text/javascript">
+    </script>
+</head> 
+<body>
+ <!-- ========== HEADER========== -->
+ <header id="header">
+        
+    <div style="margin: 0 auto; width:1200px ;">
+        <div class="logo" >
+            <img src="image/bongdeplambeonglamdohihi.png" alt="Daisy Resort" title="Daisy Resort">
+        </div>
+        <div class="search-container" style="float: left; display: none; ;">
+            <form action="/action_page.php" >
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <!-- icon menu -->
+        <div class="icon-on-mobile" >
+            <a href="javascript:void(0);" class="icon" style="color:  rgb(252, 218, 125);" onclick="myFunction()">
+                <i class="fa fa-bars fa-2x"></i> </a>
+        </div>
+        <div id="menu">
+            <ul class="hNav" >
+                <li  class="hNav-active" ><a href="home.html">HOME</a></li>
+                <li  class="drop-content"><a href="#">SERVICE</a>
+                    <ul class="drop-menu">
+                        <li class="active"><a href="restaurant.html">Restaurant</a></li>
+                        <li class="active"><a href="#">Spa</a></li>
+                        <li class="active"><a href="#">Fitness</a></li>
+                        <li class="active"><a href="#">Casino</a></li>
+                        <li class="active"><a href="#">Golf</a></li>
+                        <li class="active"><a href="#">Swimming</a></li>
+                    </ul>
+                </li>
+                <li  class="drop-content" ><a href="#">ROOM</a>
+                    <ul class="drop-menu">
+                        <li class="active"><a href="single-room.html">Single room</a></li>
+                        <li class="active"><a href="#">Twin room</a></li>
+                        <li class="active"><a href="#">Double room</a></li>
+                        <li class="active"><a href="#">Family-room</a></li>
+                    </ul>
+                </li    >
+                <li class="hNav-active"><a href="#">NEWS</a></li>
+                <li class="hNav-active"><a href="contact.html">CONTACT</a></li>
+                <li class="hNav-active"><a href="aboutus.html">ABOUT US</a></li>
+                <li  style="padding-left: 5px; color: white;" ><button type="button" class="btn"><a href="book-online.html"  ><i class="fa fa-calendar " aria-hidden="true"></i>
+                    BOOK ONLINE</a></button></li>    
+                </ul>
+                
+
+        </div>
+    </div>
+</header>
+    <!-- ===========BODY======= -->
+
+    <div class="book-online " >
+        <div id="bg-contact" >  
+            <span>
+                <div id="inner" style="padding-top: 50px; ">
+                    <div id="text">
+                        <h2  style="color: white;">BOOKING FORM </h2>
+                        <ul style="padding-top: 10px;">
+                            <li> <a href="home.html" style="padding-left: 5px;" > Home /  </a></li>
+                            
+                            <li><a href="contact.html" style="padding-left: 5px;"> Booking Form</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </span>
+        </div>
+     </div>
+        <div class="fm-book">
+            <form action="" >
+                <div id="book-stay">
+                    <h1>BOOK YOUR STAY</h1> <br>
+                 <h4> BOOK YOUR ROOM NOW</h4> <br>
+                    <p style="letter-spacing: 1.5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia deleniti fuga recusandae perferendis modi voluptate, ad ratione saepe voluptas nam provident reiciendis velit nulla repellendus illo consequuntur amet similique hic</p>
+                </div>
+                <div style="display: flex;">   
+                    <!-- tren -->
+                    <div class="fm-book-1" style="padding-right: 20px;" >
+                        <label for="name">  Name</label>
+                        <input type="text" id="fname" name=" name" placeholder="Your name..">
+                    
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="lastname" placeholder="Your Email...">
+    
+                        <label for="Phone">Phone</label>
+                        <input type="text" id="phone" name="lastname" placeholder="Phone...">
+                         <!-- check in -->
+                      
+                         <label for="check-in">Check In</label>
+                         <input type="datetime-local" class=" " id="check-in">
+                     
+                     
+                      <!-- check out  -->
+                       
+                         <label for="check-in">Check Out</label>
+                         <input type="datetime-local" class=" " id="check-in">
+                    </div>
+                    <div class="fm-book-2">
+                        <label for="addr">Address</label>
+                        <input type="text" id="addr" name="addr" placeholder="Your name..">
+                
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" placeholder="Phone...">
+                    
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="lastname" placeholder="Your Email...">
+    
+                       
+                         <!-- guests -->                  
+                        <div style="display: inline-flex;" >
+                            <div style="margin-right: 50px;"   >
+                                <label for="adult">Adult</label>
+                                <input type="number" class="" id="adult" placeholder="Quality">
+                            </div>
+                            <div >
+                                <label for="children">Children</label>
+                                <input type="number" class="" id="children" placeholder="Quality">
+                            </div>
+                        </div>
+                    </div>
+                    
+                     
+
+                </div>
+                <div>
+                    <!-- duoi -->
+                    <!-- room type -->
+                     <!-- <input type="text" class=" " id="inputAddress" placeholder="1234 Main St"> -->
+                     <label for="roomtype">Room Type</label>
+                     <select id="roomtype" class=" ">
+                        <option >Select Room Type</option>
+                        <option> Single Room</option>
+                        <option> Twin Room</option>
+                        <option> Double Room</option>
+                        <option> Family Room</option>
+                      </select>
+                      <label for="inputAddress">Your Comment</label>
+                     <textarea class=" "  name="cmt" id="cmt" cols="30" rows="5"></textarea>
+
+                </div>
+                <button type="submit" class="btn-book-online">SEND YOUR MESSAGE</button>
+                <p style="margin-bottom: 70px;"></p>
+            </form>
+
+        <div class="hot-offers" style="float: right;">
+            <div > 
+                <h1>OFFERS</h1> <br>
+                <h4>CHECK OUT OUR SPECIAL OFFERS</h4> <br>
+            </div>
+            <div class="offer">
+               <a href=""><img src="image/offer1.jpg" alt="" style="width: 260px; height: 173px;"></a> 
+                <a href="offer.html">All-Inclusive Honeymoon Package</a>
+            </div>
+            <div class="offer">
+               <a href=""><img src="image/offer2.jpg" alt="" style="width: 260px; height: 173px;"></a> 
+                <a href="offer.html">All-Inclusive Family Package</a>
+            </div>
+            <div class="offer">
+               <a href=""> <img src="image/offer3.jpg" alt=""style="width: 260px; height: 173px;"></a>
+                <a href="offer.html">Fly, Stay and Save Over 30%</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!--=========FOOTER===========  -->
+<footer>
+    <div id="footer" >
+        <div  class="fNav" >
+            <!-- <img src="image/logo.png" alt="Daisy Resort" style="width: 300px;"> -->
+            <h3 >DAISY RESORT</h3>
+            <p style="line-height: 1.9em;">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, velit placeat assumenda incidunt dolorem aliquam!
+            </p>
+    
+        </div>
+        <div class="fNav"  >
+            <h3 >LATEST NEWS</h3>
+            <ul style="list-style-type: none; color: black; ">
+                <li> <a href=""> 10 Tips for holiday travel </a>  </li>
+                <li> <a href="">Are you ready to enjoy your holidays</a></li>
+                <li><a href="">Honeymoon at Daisy Resort</a></li>
+                <li><a href="">Travel gift ideas for every type of traveler</a></li>
+                <li><a href="">Breakfast with coffee and orange juice</a></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="fNav"  >
+            <h3>USEFUL LINKS</h3>
+            <ul style="list-style-type: none; color: black; " >
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Shop</a> </li>
+                <li><a href="">Our Location</a></li>     
+                
+            </ul>
+    
+        </div>
+        <div class="fNav"  >
+            <h3>CONTACT INFO</h3>
+            <ul style="list-style-type: none; color: black; ">
+                <li><a href=""> <i class="fa fa-map-marker" aria-hidden="true" ></i> Lorem ipsum dolor, 25, Daisy</a></li> 
+                <li><a href=""><i class="fa fa-phone" aria-hidden="true" > </i> Phone: +1 888 123 4567</a></li>
+                <li> <a href=""><i class="fa fa-fax" aria-hidden="true" > </i> Fax: +1 888 123 4567</a></li>
+                <li> <a href=""><i class="fa fa-globe" aria-hidden="true"></i> Web: www.Daisyresort.com</a></li>
+                <li> <a href=""><i class="fa fa-envelope" aria-hidden="true"></i> Email: contact@Daisyresort.com  </a></li>
+
+            </ul> 
+                <!-- =======SOCIAL MEDIA===== -->
+    
+    <div class="social-media" >
+        <a class="tooltip facebook" href=""> <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+        <span class="tooltiptext">Facebook</span></a> 
+        <a class="tooltip twitter" href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" fa-2x></i> 
+            <span class="tooltiptext">Twitter</span></a>
+        <!-- <a class="tooltip googleplus"  href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+            <span class="tooltiptext">Google Plus</span></a> -->
+        <a class="tooltip pinterest " href="#"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i>
+            <span class="tooltiptext">Pinterest</span></a>
+        <a class="tooltip linkedin" href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i> 
+            <span class="tooltiptext">Linkedin</span></a>
+        <a class="tooltip youtube" href="#"> <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+            <span class="tooltiptext">Youtube</span></a>
+        <a class="tooltip instagram" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            <span class="tooltiptext">Instagram</span></a>
+    </div>
+    
+        </div>
+        
+    </div>
+    
+    
+</footer>
+</body>
+</html>

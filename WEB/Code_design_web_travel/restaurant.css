@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+}
+#bg-restaurant{
+    background-image: url("image/restaurant/restaurant.jpg");
+    width: 100%;
+    height: 394px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+   
+}
+.bg-text {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    /* position: fixed; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* width: 300px; */
+    padding: 20px;
+    text-align: center;
+  }
+    .text{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+      margin: 0 auto;
+      width: 1200px;
+      text-align: justify;
+      color: rgb(126, 126, 126);
+    }
+  /* =====food==== */
+  .img-food img{
+      width: 170px;  
+      height: 112px;
+
+  }
+  #menu-restaurant{
+      margin: 0 auto;
+      width: 1200px;
+      margin-bottom: 70px;
+  }
+  table{
+      width: 500px;
+  }
+  .tbl-food tr td{
+      padding: 10px;
+  }
+  .tbl-food .food{
+      border-bottom: 1px solid rgb(161, 161, 161);
+      text-transform: uppercase;
+      color: rgb(146, 146, 146);
+      font-weight: bold;
+  }
+  .tbl-food .price {
+    color: rgb(233, 207, 64);
+  }
+
+  .tbl-food tr td p{
+    color: rgb(146, 146, 146);
+  }
+  /* ----- */
+  .more-info-restaurant{
+      margin: 0 auto;
+      width: 1200px;
+      display: inline;
+      
+  }
+  .img-restaurant{
+    
+    margin: 0 auto;
+    width: 1200px;
+  }
+  .img-restaurant img{
+    padding: 13px;
+      width: 270px;
+      height: 169px;
+
+  }
+  .img-restaurant img:hover{
+      cursor: pointer;
+      box-shadow: 3px 3px 3px 3px rgb(179, 177, 177);
+      opacity: 0.9;
+    
+  }

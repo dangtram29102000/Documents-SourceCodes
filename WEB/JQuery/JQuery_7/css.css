@@ -1,0 +1,21 @@
+table {
+    margin-left: 500px;
+    margin-top: 250px;
+}
+
+td {
+    padding-bottom: 15px;
+}
+
+input {
+    width: 150px;
+}
+
+select {
+    width: 60px;
+}
+
+#Find_date {
+    cursor: pointer;
+    margin-left: 80px;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="book-online.css">
+    <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.1/css/all.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <script type="text/javascript" src="main.js"></script>
+    <title>Contact Us</title>
+    
+</head> 
+<body>  
+ <!-- ========== HEADER========== -->
+ <header id="header">
+        
+    <div style="margin: 0 auto; width:1200px ;">
+        <div class="logo" >
+            <img src="image/bongdeplambeonglamdohihi.png" alt="Daisy Resort" title="Daisy Resort">
+        </div>
+        <div class="search-container" style="float: left; display: none; ;">
+            <form action="/action_page.php" >
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <!-- icon menu -->
+        <div class="icon-on-mobile" >
+            <a href="javascript:void(0);" class="icon" style="color:  rgb(252, 218, 125);" onclick="myFunction()">
+                <i class="fa fa-bars fa-2x"></i> </a>
+        </div>
+        <div id="menu">
+            <ul class="hNav" >
+                <li  class="hNav-active" ><a href="home.html">HOME</a></li>
+                <li  class="drop-content"><a href="#">SERVICE</a>
+                    <ul class="drop-menu">
+                        <li class="active"><a href="restaurant.html">Restaurant</a></li>
+                        <li class="active"><a href="#">Spa</a></li>
+                        <li class="active"><a href="#">Fitness</a></li>
+                        <li class="active"><a href="#">Casino</a></li>
+                        <li class="active"><a href="#">Golf</a></li>
+                        <li class="active"><a href="#">Swimming</a></li>
+                    </ul>
+                </li>
+                <li  class="drop-content" ><a href="#">ROOM</a>
+                    <ul class="drop-menu">
+                        <li class="active"><a href="single-room.html">Single room</a></li>
+                        <li class="active"><a href="#">Twin room</a></li>
+                        <li class="active"><a href="#">Double room</a></li>
+                        <li class="active"><a href="#">Family-room</a></li>
+                    </ul>
+                </li    >
+                <li class="hNav-active"><a href="#">NEWS</a></li>
+                <li class="hNav-active"><a href="contact.html">CONTACT</a></li>
+                <li class="hNav-active"><a href="aboutus.html">ABOUT US</a></li>
+                <li  style="padding-left: 5px; color: white;" ><button type="button" class="btn"><a href="book-online.html"  ><i class="fa fa-calendar " aria-hidden="true"></i>
+                    BOOK ONLINE</a></button></li>    
+                </ul>
+                
+
+        </div>
+    </div>
+</header>
+
+<!-- ===========BODY========== -->
+<!-- <h1 class="animate__animated animate__animate__fadeInDown">An animated element</h1> -->
+<div class="book-online " >
+    <div id="bg-contact" >  
+        <span>
+            <div id="inner" style="padding-top: 50px; ">
+                <div id="text">
+                    <h3  style="color: white;">CONTACT US </h3>
+                    <ul style="padding-top: 10px;">
+                        <li> <a href="home.html" style="padding-left: 5px;" > Home /  </a></li>
+                        
+                        <li><a href="contact.html" style="padding-left: 5px;"> Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </span>
+    </div>
+</div>
+<div style="margin: 0 auto;width: 1200px;">
+    <!-- ==== -->
+    
+     <div class="content " >
+         <h1>CONTACT</h1> <br>
+         <h4> Let's talk</h4>
+     </div>
+     
+     <!-- form -->
+    <div class="form-contact" >
+        <div class="fm-left">
+            <form action="">
+
+                <label for="name">  Name</label>
+                <input type="text" id="fname" name=" name" placeholder="Your name..">
+            
+                <label for="email">Email</label>
+                <input type="text" id="email" name="lastname" placeholder="Your Email...">
+
+                <label for="Phone">Phone</label>
+                <input type="text" id="phone" name="lastname" placeholder="Phone...">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject...">
+
+                <label for="subject">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+               <!-- button -->
+                <input type="submit" value="Send Your Message ">
+              </form>
+          </div >
+        <div class="fm-right" style="float: right;">
+            <div>
+                <iframe  id="gg-map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249525.4477842691!2d109.10641334338776!3d12.259434614289347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3170677811cc886f%3A0x5c4bbc0aa81edcb9!2sNha%20Trang%2C%20Khanh%20Hoa%20Province%2C%20Vietnam!5e0!3m2!1sen!2s!4v1607523965819!5m2!1sen!2s" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="contact-info ">
+                <ul>
+                    <li><a href=""> <i class="fa fa-map-marker" aria-hidden="true" ></i> Lorem ipsum dolor, 25, Daisy</a></li> 
+                    <li><a href=""><i class="fa fa-phone" aria-hidden="true" > </i> Phone: +1 888 123 4567</a></li>
+                    <li> <a href=""><i class="fa fa-fax" aria-hidden="true" > </i> Fax: +1 888 123 4567</a></li>
+                    <li> <a href=""><i class="fa fa-globe" aria-hidden="true"></i> Web: www.Daisyresort.com</a></li>
+                    <li> <a href=""><i class="fa fa-envelope" aria-hidden="true"></i> Email: contact@Daisyresort.com  </a></li>
+ 
+                </ul>
+            </div>
+             <!-- =======SOCIAL MEDIA===== -->
+    
+        <div class="social-media">
+            <a class="facebook"  href=""> <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a> 
+            <a class="twitter"href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" fa-2x></i></a>
+            <a class="googleplus"  href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+            <a class="pinterest"  href="#"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></i></i></a>
+            <a class="linkedin"  href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+            <a class="youtube" href="#"> <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+            <a class="instagram" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </div>
+       
+       
+
+        </div>
+    </div>
+</div>
+    <!--=========FOOTER===========  -->
+   <footer>
+      <div id="footer" >
+        <div  class="fNav" >
+            <!-- <img src="image/logo.png" alt="Daisy Resort" style="width: 300px;"> -->
+            <h3 style="color: rgb(223, 130, 68);">DAISY RESORT</h3>
+            <p style="line-height: 1.9em;">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, velit placeat assumenda incidunt dolorem aliquam!
+            </p>
+    
+           </div>
+           <div class="fNav"  >
+            <h3 >LATEST NEWS</h3>
+            <ul style="list-style-type: none; color: black; ">
+                <li> <a href=""> 10 Tips for holiday travel </a>  </li>
+                <li> <a href="">Are you ready to enjoy your holidays</a></li>
+                <li><a href="">Honeymoon at Daisy Resort</a></li>
+                <li><a href="">Travel gift ideas for every type of traveler</a></li>
+                <li><a href="">Breakfast with coffee and orange juice</a></li>
+                <li></li>
+            </ul>
+           </div>
+           <div class="fNav"  >
+               <h3>USEFUL LINKS</h3>
+               <ul style="list-style-type: none; color: black; " >
+                   <li><a href="">About Us</a></li>
+                   <li><a href="">Contact Us</a></li>
+                   <li><a href="">Shop</a> </li>
+                   <li><a href="">Our Location</a></li>     
+                 
+               </ul>
+    
+           </div>
+           <div class="fNav"  >
+               <h3>CONTACT INFO</h3>
+               <ul style="list-style-type: none; color: black; ">
+                  <li><a href=""> <i class="fa fa-map-marker" aria-hidden="true" ></i> Lorem ipsum dolor, 25, Daisy</a></li> 
+                   <li><a href=""><i class="fa fa-phone" aria-hidden="true" > </i> Phone: +1 888 123 4567</a></li>
+                   <li> <a href=""><i class="fa fa-fax" aria-hidden="true" > </i> Fax: +1 888 123 4567</a></li>
+                   <li> <a href=""><i class="fa fa-globe" aria-hidden="true"></i> Web: www.Daisyresort.com</a></li>
+                   <li> <a href=""><i class="fa fa-envelope" aria-hidden="true"></i> Email: contact@Daisyresort.com  </a></li>
+
+               </ul> 
+                <!-- =======SOCIAL MEDIA===== -->
+    
+       <div class="social-media" style="background-color: rgb(233, 232, 232);">
+        <a class="facebook"  href=""> <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>       </a> 
+        <a class="twitter"href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" fa-2x></i></a>
+        <!-- <a class="googleplus"  href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a> -->
+        <a class="pinterest"  href="#"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></i></i></a>
+        <a class="linkedin"  href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        <a class="youtube" href="#"> <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+        <a class="instagram" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+    </div>
+    
+        </div>
+        
+      </div>
+      
+     
+   </footer>
+</body>
+</html>

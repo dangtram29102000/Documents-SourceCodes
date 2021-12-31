@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+form table {
+    margin-left: 450px;
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $("#calculate").click(function() {
+
+                var width = $("#width").val();
+                var height = $("#height").val();
+                if (width == "" || height == "") {
+                    alert("Please enter width or height");
+                } else if (isNaN(width) || isNaN(height)) {
+                    alert("ERROR!!!");
+                } else if (width <= 0 || height <= 0) {
+                    alert("WRONG WIDTH OR HEIGHT");
+                }
+                $("#acreage").val(Number(width) * Number(height));
+            });
+        });
+    </script>
+    <h2 style="margin-top:20px;margin-left: 450px;">RECTANGULAR AREA </h2>
+    <form action="">
+        <table>
+            <tr>
+                <td>Width </td>
+                <td><input type="text" id="width" size="15" maxlength="30" style="margin-bottom:5px"></td>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td><input type="text" id="height" size="15" maxlength="30" style="margin-bottom:5px"></td>
+            </tr>
+            <tr>
+                <td>Acreage</td>
+                <td><input type="text" id="acreage" size="15" maxlength="30" readonly="" style="margin-bottom:5px"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input id="calculate" type="button" name="calculate" value="PRESS" onclick="Calculation()">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

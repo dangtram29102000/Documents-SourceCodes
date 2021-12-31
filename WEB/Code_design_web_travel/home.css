@@ -1,0 +1,319 @@
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        @font-face {
+            src: url("UTM Wedding K&T.ttf");
+            font-family: myFont;
+        }
+        
+        h2 {
+            color:rgb(141, 141, 141);
+            /* text-align: center; */
+            padding: 8px
+        }
+        
+        .line {
+            background: url("image/home/lineLeft.png") no-repeat 0 center;
+            display: table-cell;
+            width: 50%;
+            height: 30px;
+        }
+        
+        
+        
+        .line-center {
+            display: table-cell;
+            padding: 0 15px;
+        }
+        
+        .dv {
+            padding: 20px 0;
+            background-color: #f8f8f8;
+            width: 100%;
+        }
+        
+        img.round {
+            border-radius: 50%;
+            border: 5px #FFFFCC;
+        }
+        
+        img.round:hover {
+            border-radius: 50%;
+            border: 5px rgb(255, 81, 0) solid;
+        }
+        
+        a.round {
+            color: #555;
+            text-decoration: none;
+        }
+        
+        a.round:hover {
+            color: rgb(255, 81, 0);
+            text-decoration: none;
+        }
+        /*Tạo bảng cho news và service*/
+        
+        .grid-container {
+            width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: auto auto;
+        }
+        /*Định dạng ô cho Service*/
+        
+        .grid-item-service {
+            text-align: center;
+            padding: 22px 6px;
+            font-size: 30px;
+        }
+        
+        .room {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            /* padding: 20px 0; */
+            /* background-image: url("image/home/background-home-product.jpg"); */
+            width: 100%;
+        }
+        
+        a.room {
+            color: #555;
+            text-decoration: none;
+            border: none;
+        }
+        /* 
+a.room:hover {
+    color: rgb(255, 81, 0);
+    text-decoration: none;
+} */
+        /*Định dạng chữ trong ảnh*/
+        
+        .text-img {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            top: 0%;
+            color: #FFFFCC;
+            font-size: 70px;
+            font-weight: bold;
+            font-family: myFont;
+            /* font-family: fantasy; */
+            text-shadow: 2px 2px 5px white;
+        }
+        .news {
+            /* box-sizing: border-box; */
+             padding-top: 70px;
+            padding-bottom: 70px;
+            width: 1200px; margin: 0 auto;
+    /* box-sizing: border-box; */
+}
+        /*Định dạng ô swim vào giữa */
+        
+        .item3-service {
+            grid-column: 1 /span 2;
+            grid-row: 2;
+        }
+        /*Định dạng ô news*/
+        
+        .item1-news {
+            width: 600px;
+            padding: 10px;
+            font-size: 15px;
+            text-align: left;
+            margin: auto;
+        }
+        
+        a.tin {
+            color: #333333;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        a.tin:hover {
+            color: rgb(255, 81, 0);
+            text-decoration: none;
+        }
+        
+        h5 {
+            padding-top: 10px;
+            color: #666666;
+        }
+        /* .column {
+    float: left;
+    padding: 10px;
+    height: 300px;
+     Should be removed. Only for demonstration 
+}*/
+        /*Định dạng gạch ngang trái phải của các tiêu đề*/
+        
+        .left {
+            width: 30%;
+        }
+        
+        .right {
+            width: 50%;
+        }
+        /* Clear floats after the columns */
+        /*
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+        
+        .room-content {
+            position: absolute;
+            width:389px;
+            height: 100%;
+            top: 80%;
+            color: white;
+            background: #80808061;
+            transition: 1s;
+        }
+        
+        .box-content {
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            /* width: 370px; */
+            height: 300px;
+        }
+        
+        .room .box-content:hover .room-content {
+            top: 60%;
+        }
+        
+        .room .box-content:hover .room-btn {
+            display: block;
+            margin-top: 20px;
+        }
+        
+        .room-btn {
+            width: 100px;
+            display: none;
+            min-height: 45px;
+            margin: auto;
+            margin-top: 100px;
+            transition: 1s;
+        }
+        
+        .room-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .room-figure-single {
+            background-image: url('image/home/single.jpg');
+        }
+        
+        .room-figure-twim {
+            background-image: url('image/home/twim.jpg');
+        }
+        
+        .room-figure-fami {
+            background-image: url('image/home/family.jpg');
+        }
+        
+        .grid-container-room {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* padding: 0 10px; */
+        }
+        
+        .contain {
+            object-fit: contain;
+        }
+        /*service*/
+        h1, h3{
+            
+            color: rgb(175, 175, 175);
+        }
+        h1{
+            font-size: 60px;
+            font-family: fantasy;
+            line-height: 2;
+            letter-spacing: 3px;
+            
+        }
+        .row{
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .column {
+            /* float: left; */
+           width: 1200px;
+            margin-bottom: 16px;
+            /* padding: 0 20px; */
+        }
+        .fa-utensils,.fa-spa,.fa-dumbbell,.fa-swimmer {
+            padding: 20px;
+        }
+        .ctn-items{
+            /* width: 100%; */
+            border: 1px solid rgb(187, 187, 187);
+            display: flex;
+            padding: 3px;
+            margin: 10px;
+        }
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+            padding: 0 16px;
+        }
+        
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .title {
+            color: grey;
+        }
+        
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .button:hover {
+            background-color: rgb(255, 81, 0);
+        }

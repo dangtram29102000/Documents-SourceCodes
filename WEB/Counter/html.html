@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- <script src="jquery.counterup.min.js"></script> -->
+    <title>Counter</title>
+</head>
+
+<body>
+    <div class="container counter-section">
+        <div class="row text-center">
+            <div class="col-md-3 counter-box">
+                <div class="icon-box"><i class="fa fa-briefcase"></i></div>
+                <p class="counter">150</p>
+                <p>PRODUCTS COMPLETED</p>
+            </div>
+
+            <div class="col-md-3 counter-box">
+                <div class="icon-box"><i class="fa fa-users"></i></div>
+                <p class="counter">590</p>
+                <p>USERS CONNECTED</p>
+            </div>
+
+            <div class="col-md-3 counter-box">
+                <div class="icon-box"><i class="fa fa-trophy"></i></div>
+                <p class="counter">100</p>
+                <p>GLOBAL ACHIEVEMENTS</p>
+            </div>
+
+            <div class="col-md-3 counter-box">
+                <div class="icon-box"><i class="fa fa-coffee"></i></div>
+                <p class="counter">800</p>
+                <p>CUP OF COFFEE</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- COUNTER -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+</body>
+
+</html>

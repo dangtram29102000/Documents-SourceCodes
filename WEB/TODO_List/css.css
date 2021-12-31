@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(60deg, rgb(28, 26, 29) 50%, rgb(70, 163, 33) 50%);
+}
+
+.styling {
+    top: 20px;
+    left: 20px;
+    font-weight: 800;
+    color: lime;
+}
+
+.container {
+    left: 50px;
+    /* display: flex; */
+    height: 450px;
+    width: 330px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #666;
+    color: #fff;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+ul li {
+    background: #eee;
+    color: #333;
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+}
+
+ul .fa-check,
+.fa-trash {
+    position: absolute;
+    cursor: pointer;
+}
+
+ul .fa-check {
+    right: 40px;
+    color: green;
+}
+
+ul .fa-trash {
+    right: 15px;
+    color: #ff0033;
+}
+
+#input::placeholder {
+    color: rgb(240, 233, 233);
+}
+
+ul .checked {
+    background: lightgreen;
+    text-decoration: line-through;
+    transition: .2s;
+}
